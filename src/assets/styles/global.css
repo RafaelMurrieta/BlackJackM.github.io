@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: green;
+    display: grid;
+    justify-content: center;
+}
+
+.my-table{
+    width: 90vw;
+    height: 9   0vh;
+    background-color: rgb(36, 155, 36);
+}
