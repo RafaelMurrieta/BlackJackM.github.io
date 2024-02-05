@@ -10,18 +10,9 @@
 <script>
 export default {
     name: 'MyCard',
-    data(){
-        return{
-            message: `Mi valor es`
-        }
-    },
-    methods:{
-        getcard(){
-            console.log('valor');
-        }
-    },
+    message: 'hola',
     props:{
-        receivedList:Array
+        receivedList:Array,
     }
 }
 </script>

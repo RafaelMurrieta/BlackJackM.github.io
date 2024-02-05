@@ -19,22 +19,19 @@ export default {
                 message: 'Preciona aqui',
                 list:[  
                     1,2,3
-                ],
-                num: null
+                ]
             }
         },
         methods:{
             randomNumber() {
                 let nm = Math.floor(Math.random() * 13)
                 this.list.push(nm)
-                
-            },
-            lastNumber(number){
-                this.lastNumber = number
             }
+
         },
         components:{
             mycard
         }
 };
+
 </script>
