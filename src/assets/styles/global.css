@@ -1,13 +1,22 @@
 body{
+    color: aliceblue;
     margin: 0;
     padding: 0;
     background-color: green;
     display: grid;
+    align-items: center;
     justify-content: center;
 }
 
-.my-table{
-    width: 90vw;
-    height: 9   0vh;
-    background-color: rgb(36, 155, 36);
+.container{
+    margin-top: 2%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 50%;
 }

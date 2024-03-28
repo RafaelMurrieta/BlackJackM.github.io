@@ -6,7 +6,6 @@
 </template>
 
 <script>
-// import mycomponent from './components/mycomponent.vue';
 import mytable from './components/table.vue';
 
 
