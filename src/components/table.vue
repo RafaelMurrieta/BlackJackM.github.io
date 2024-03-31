@@ -2,13 +2,15 @@
     <div class="my-table">   
         <div class="bank">
             <div class="cards-back">
-                
+                <div>
+                    <span></span>
+                </div>
             </div>
             <div class="gamerCard">
 
             </div>
             <div class="money">
-
+                <mony-area></mony-area>
             </div>
         </div>
         <div class="player">
@@ -18,8 +20,8 @@
             <div class="cards">
 
             </div>
-            <div class="numbers-container"> <!-- Nuevo contenedor para los números -->
-                <div class="numbers" v-bind:style="{ overflow: list.length > 5 ? 'auto' : 'visible' }"> <!-- Aplicando overflow según la longitud de la lista -->
+            <div class="numbers-container"> 
+                <div class="numbers" v-bind:style="{ overflow: list.length > 5 ? 'auto' : 'visible' }"> 
                     <h1>
                         <span v-for="(number, index) in list" :key="index">
                             {{ number }}{{ index < list.length - 1 ? ', ' : '' }}
@@ -32,15 +34,18 @@
 </template>
 
 <script>
+import monyArea from './monyArea.vue';
+
+
+
 let rest = 0
 export default {
+  components: { monyArea },
     name: 'MyTable',
     data(){
         return{
             message: 'HIT',
-            list:[  
-                
-            ]
+            list:[]
         }
     },
     methods:{
@@ -69,11 +74,33 @@ export default {
 .bank{
     display: flex;
     width: 100%;
-    background: black;
+    margin: 0 5% 0 5%;
 }
 .bank > div{
-    width: auto;
-    background: red;
+    display: grid;
+    width: 30%;
+    border: 1px solid black;
+}
+.bank .cards-back{
+    justify-content: center;
+    align-items: center;
+}
+.bank .cards-back div{
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background: black;
+    height: 10%;
+    width: 15vw;
+    border: 1px solid black;
+}
+.bank .cards-back div span{
+    display: grid;
+    border-radius: 10px;
+    background: gray;
+    width: 10vw;
+    height: 5px;
 }
 .player{
     display: grid;

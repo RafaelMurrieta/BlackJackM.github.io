@@ -1,14 +1,11 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <!-- <mycomponent/> -->
   <mytable/>
 
 </template>
 
 <script>
 import mytable from './components/table.vue';
-
-
 
 export default {
   name: 'App',
