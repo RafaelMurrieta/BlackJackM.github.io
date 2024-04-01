@@ -7,8 +7,13 @@
 
 
 <script>
+import cardsInfo from '../consts/cards.ts';
+var card = cardsInfo
+
+
 export default {
     name: 'MyCard',
+    info: card,
     message: 'hola',
     props:{
         receivedList:Array,

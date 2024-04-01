@@ -18,7 +18,7 @@
                 <button v-on:click="randomNumber">{{message}}</button>
             </div>
             <div class="cards">
-
+                <my-card></my-card>
             </div>
             <div class="numbers-container"> 
                 <div class="numbers" v-bind:style="{ overflow: list.length > 5 ? 'auto' : 'visible' }"> 
@@ -35,12 +35,12 @@
 
 <script>
 import monyArea from './monyArea.vue';
-
+import myCard from './cards.vue'
 
 
 let rest = 0
 export default {
-  components: { monyArea },
+  components: { monyArea, myCard },
     name: 'MyTable',
     data(){
         return{

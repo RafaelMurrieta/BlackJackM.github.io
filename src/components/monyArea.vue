@@ -4,7 +4,7 @@
             <img src="../assets/images/moneyTwo.svg">
         </div>
         <div class="money">
-            <h1>snajxn</h1>
+            <h1 id="howMuch"></h1>
         </div>
     </div>
 </template>
